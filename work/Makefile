@@ -23,10 +23,10 @@
 # 
 ################################################################################
 
-#SHELL=cmd
+SHELL=cmd
 
 # System configuration
-CC = ../ARMtools/bin/arm-atollic-eabi-gcc
+CC = arm-atollic-eabi-gcc
 RM=rm -rf
 
 # Assembler, Compiler and Linker flags and linker script settings
