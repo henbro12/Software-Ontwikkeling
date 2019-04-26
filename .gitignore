@@ -1,0 +1,3 @@
+
+# Untrack generated objective files
+work/Debug/**/*.o

@@ -1,0 +1,13 @@
+language: none
+
+build:
+  ci:
+    - make all
+
+integrations:
+  hub:
+    - integrationName: Software-Ontwikkeling
+      type: docker
+      branches:
+        only:
+          - master
