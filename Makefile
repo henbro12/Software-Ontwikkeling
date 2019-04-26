@@ -1,5 +1,5 @@
 
-GCC_DIR = c:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ARMTools\bin
+GCC_DIR = ../ARMtools/bin
 export PATH:=$(GCC_DIR);$(PATH)
 
 
