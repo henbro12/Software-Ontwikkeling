@@ -2,12 +2,5 @@ language: c
 
 build:
   ci:
+    - echo "Clean and build repository"
     - make all
-
-integrations:
-  hub:
-    - integrationName: Software-Ontwikkeling
-      type: docker
-      branches:
-        only:
-          - master
