@@ -1,9 +1,6 @@
 
-GCC_DIR = ../ARMtools/bin
-export PATH:=$(GCC_DIR);$(PATH)
-
-
 .PHONY: all
+
 
 help:
 	@echo -e "To use this Makefile, the following commands can be used:\
