@@ -1,5 +1,5 @@
 
-GCC_DIR = ../ARMtools/bin
+GCC_DIR = /root/src/github.com/henbro12/Software-Ontwikkeling/ARMtools/bin
 export PATH:=$(GCC_DIR);$(PATH)
 
 
