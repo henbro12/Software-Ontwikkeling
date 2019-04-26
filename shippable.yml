@@ -4,6 +4,3 @@ build:
   ci:
     - echo "Clean and build repository"
     - make all
-
-env:
-  - PATH=../ARMtools/bin
