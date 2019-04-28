@@ -1,5 +1,5 @@
 
-GCC_DIR = ../ARMtools/bin
+GCC_DIR = ../../ARMtools/bin
 export PATH:=$(GCC_DIR);$(PATH)
 
 
@@ -16,7 +16,7 @@ all: clean build
 
 
 clean:
-	cd work; make clean
+	cd TEST/Debug; make clean
 
 build:
-	cd work; make all
+	cd TEST/Debug; make all
