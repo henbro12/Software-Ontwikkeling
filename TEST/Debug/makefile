@@ -2,9 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-GCC_DIR = ../../ARMtools/bin
-export PATH:=$(GCC_DIR);$(PATH)
-
 
 
 -include ../makefile.init
@@ -36,7 +33,7 @@ all: TEST.elf secondary-outputs
 
 # Tool invocations
 TEST.elf: $(OBJS) $(USER_OBJS)
-	$(GCC_DIR)/arm-atollic-eabi-gcc -o "TEST.elf" $(OBJS) $(USER_OBJS) $(LIBS) -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"../stm32f4_flash.ld" -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler "-Wl,-Map=TEST.map" -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group
+	/root/src/github.com/henbro12/Software-Ontwikkeling/ARMtools/bin/arm-atollic-eabi-gcc -o "TEST.elf" $(OBJS) $(USER_OBJS) $(LIBS) -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"../stm32f4_flash.ld" -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler "-Wl,-Map=TEST.map" -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group
 #
 #EXECUTABLES: TEST.elf $(EXECUTABLES)
 #	"C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java" -jar "C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar" sizeinfo list TEST.elf
