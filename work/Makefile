@@ -23,7 +23,7 @@
 # 
 ################################################################################
 
-SHELL=cmd.exe
+SHELL=cmd
 
 # System configuration
 CC = arm-atollic-eabi-gcc
