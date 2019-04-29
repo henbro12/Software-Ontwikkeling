@@ -3,4 +3,5 @@ language: c
 build:
   ci:
     - echo "Clean and build repository"
+    - chmod +x ARMTools/bin/arm*
     - make all
