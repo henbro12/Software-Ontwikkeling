@@ -23,7 +23,7 @@
 # 
 ################################################################################
 
-SHELL=$(PWD)/cmd.exe
+#SHELL=$(PWD)/cmd.exe
 
 # System configuration
 CC = arm-atollic-eabi-gcc
