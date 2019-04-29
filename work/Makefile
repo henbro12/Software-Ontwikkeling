@@ -23,7 +23,7 @@
 # 
 ################################################################################
 
-#SHELL=$(PWD)/cmd.exe
+SHELL=$(PWD)/cmd.exe
  
 CC = $(PWD)/../ARMTools/bin/arm-atollic-eabi-gcc.exe
 RM=rm -rf
