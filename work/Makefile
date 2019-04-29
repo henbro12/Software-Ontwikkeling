@@ -24,8 +24,7 @@
 ################################################################################
 
 #SHELL=$(PWD)/cmd.exe
-
-System configuration/root/src/github.com/henbro12/Software-Ontwikkeling/ARMtools/bin/# 
+ 
 CC = $(PWD)/../ARMtools/bin/arm-atollic-eabi-gcc
 RM=rm -rf
 
