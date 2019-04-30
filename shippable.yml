@@ -1,7 +1,13 @@
 language: none
 
 build:
+  pre_ci_boot:
+    image_name: vidavidorra/u14_gnu_arm_embedded
+    image_tag: latest
+    pull: true
+
   ci:
+    - arm-none-eabi-gcc --version
     - echo "Clean and build repository"
     - chmod +x work/cmd.exe
     - chmod +x ARMTools/bin/arm*
