@@ -1,8 +1,8 @@
-language: c
+language: none
 
 build:
   ci:
     - echo "Clean and build repository"
-    - chmod +x work/cmd*
+    - chmod +x work/cmd.exe
     - chmod +x ARMTools/bin/arm*
     - make all
