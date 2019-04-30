@@ -23,9 +23,9 @@
 # 
 ################################################################################
 
-SHELL=$(PWD)/cmd.exe
+#SHELL=$(PWD)/cmd.exe
  
-CC = $(PWD)/../ARMTools/bin/arm-atollic-eabi-gcc.exe
+CC = arm-none-eabi-gcc
 RM=rm -rf
 
 # Assembler, Compiler and Linker flags and linker script settings

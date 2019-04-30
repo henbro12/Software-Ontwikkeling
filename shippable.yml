@@ -8,7 +8,4 @@ build:
 
   ci:
     - arm-none-eabi-gcc --version
-    - echo "Clean and build repository"
-    - chmod +x work/cmd.exe
-    - chmod +x ARMTools/bin/arm*
     - make all
