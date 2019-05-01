@@ -77,7 +77,7 @@ endif
 
 
 clean:
-	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.map"
+	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.hex" "$(BIN_DIR)/ARM_CORE.map"
 
 
 ##################
