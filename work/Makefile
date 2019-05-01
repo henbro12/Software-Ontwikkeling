@@ -23,7 +23,7 @@
 # 
 ################################################################################
 
-ifeq ($(WIN32), TRUE)
+ifdef WIN32
 	SHELL=cmd
  	CC = arm-atollic-eabi-gcc
  	OBJCOPY = arm-atollic-eabi-objcopy
@@ -68,9 +68,13 @@ OBJS := $(OBJS:%.S=$(OBJECT_DIR)/%.o)
 ###############
 all: buildelf
 
+
 buildelf: $(OBJS) 
 	$(CC) -o "$(BIN_DIR)/ARM_CORE.elf" $(OBJS) $(LINKER_FLAGS)
+ifdef OBJCOPY
 	$(OBJCOPY) -O ihex "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.hex"
+endif
+
 
 clean:
 	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.map"
