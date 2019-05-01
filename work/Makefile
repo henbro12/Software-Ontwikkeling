@@ -26,6 +26,7 @@
 ifeq ($(WIN32), TRUE)
 	SHELL=cmd
  	CC = arm-atollic-eabi-gcc
+ 	OBJCOPY = arm-atollic-eabi-objcopy
 else
 	CC = arm-none-eabi-gcc
 endif
@@ -69,11 +70,11 @@ all: buildelf
 
 buildelf: $(OBJS) 
 	$(CC) -o "$(BIN_DIR)/ARM_CORE.elf" $(OBJS) $(LINKER_FLAGS)
+	$(OBJCOPY) -O ihex "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.hex"
 
 clean:
 	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.map"
 
-# @mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 
 ##################
 # Specific targets
