@@ -23,9 +23,13 @@
 # 
 ################################################################################
 
-SHELL=/bin/bash
- 
-CC = arm-none-eabi-gcc
+ifeq ($(WIN32), TRUE)
+	SHELL=cmd
+ 	CC = arm-atollic-eabi-gcc
+else
+	CC = arm-none-eabi-gcc
+endif
+
 RM=rm -rf
 
 # Assembler, Compiler and Linker flags and linker script settings
@@ -69,12 +73,12 @@ buildelf: $(OBJS)
 clean:
 	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.map"
 
+# @mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 
 ##################
 # Specific targets
 ##################
 $(OBJECT_DIR)/src/main.o: src/main.c
-	@mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 	$(CC) $(COMPILER_FLAGS) src/main.c -o $(OBJECT_DIR)/src/main.o 
 
 
@@ -82,13 +86,10 @@ $(OBJECT_DIR)/src/main.o: src/main.c
 # Implicit targets
 ##################
 $(OBJECT_DIR)/%.o: %.c
-	@mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 	$(CC) $(COMPILER_FLAGS) $< -o $@
 
 $(OBJECT_DIR)/%.o: %.s
-	@mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 	$(CC) $(ASSEMBLER_FLAGS) $< -o $@
 	
 $(OBJECT_DIR)/%.o: %.S
-	@mkdir $(subst /,\,$(dir $@)) 2> NUL || echo off
 	$(CC) $(ASSEMBLER_FLAGS) $< -o $@
