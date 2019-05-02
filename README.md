@@ -18,36 +18,31 @@ Shippable
 
 ### Installing ###
 
-Get repository
+Before building and running the software, this repository should be setup with GIT and Shippable.
+
+In order to flash and run this project locally, the following options can be used:
+* Option 1, Debug:
 ```
-Clone this repository to your local folder
+Use the Debug button within Atollic to flash the project on the ARM
 ```
 
-Setup tools
+* Option 2, Run:
+Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html) from STMicroElectronics and perform the following:
 ```
-Connect your project to GIT and Shippable
-```
-
-Run this project locally
-Option 1, Debug:
-```
-Use the Debug option to flash the project on the ARM
-```
-Option 2, Run:
-```
-Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html) from STMicroElectronics
 * Go to Run > External Tools > External Tools Configurations
 * Right-click on Program > New
 * Set Location and Working directory to ST-LINK_CLI.exe
 * Set arguments to:
-	* -c SWD -P ${project_loc}\${config_name:${project_name}}\${project_name}.hex -Rst
+-c SWD -P ${project_loc}\${config_name:${project_name}}\${project_name}.hex -Rst
 * Apply and Exit
 * Open Run > Run Configurations...
 * Right-click on Launch Group > New
 * Add... > choose external tool you've just created for ST-LINK_CLI.exe
 * Apply and Exit
-The project should now be configured to flash and run it
 ```
+The project should now be configured to flash and run it
+
+![picture alt](http://thundertronics.com/wp-content/uploads/2018/07/flashandrun.png "Flash and Run configurations")
 
 ## Building the project ###
 
