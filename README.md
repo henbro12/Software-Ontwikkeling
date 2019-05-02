@@ -22,10 +22,11 @@ Before building and running the software, this repository should be setup with G
 
 In order to flash and run this project locally, the following options can be used:
 * Option 1, Debug:
-Use the Debug button within Atollic to flash the project on the ARM
 
+Use the Debug button within Atollic to flash and debug the project on the ARM
 
-* Option 2, Run:  
+* Option 2, Run:
+
 Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html) from STMicroElectronics and perform the following:
 ```
 * Go to Run > External Tools > External Tools Configurations
@@ -56,16 +57,17 @@ To use this Makefile, the following commands should be used:
 
 ## Running the tests ##
 
-No tests are implemented yet
+No tests are implemented yet.
 
 ## Authors ##
 
-**Henrico Brom**  (05-02-2019)  
+**Henrico Brom**  (05-02-2019)
+
 Third-year student Electrical Engineering at the Utrecht University of Applied Sciences  
 (Henrico.brom@student.hu.nl)
 
 ## Acknowledgements ##
-* Franc van der Bent (Teacher at Hogeschool Utrecht)
-* Michiel Scager (Teacher at Hogeschool Utrecht)
-* Jeroen de Bruijn (Graduated student from Hogeschool Utrecht)
+* Franc van der Bent  (Teacher at Hogeschool Utrecht)
+* Michiel Scager      (Teacher at Hogeschool Utrecht)
+* Jeroen de Bruijn    (Graduated student from Hogeschool Utrecht)
 
