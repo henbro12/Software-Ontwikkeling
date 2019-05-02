@@ -1,5 +1,10 @@
 language: none
 
+env:
+  global:
+    - SHIPPABLE: TRUE
+    - PROJECT_NAME: ARM_CORE
+
 build:
   pre_ci_boot:
     image_name: vidavidorra/u14_gnu_arm_embedded

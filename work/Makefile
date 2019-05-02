@@ -23,10 +23,11 @@
 # 
 ################################################################################
 
-ifdef WIN32
+ifndef SHIPPABLE
 	SHELL=cmd
  	CC = arm-atollic-eabi-gcc
  	OBJCOPY = arm-atollic-eabi-objcopy
+ 	PROJECT_NAME = ARM_CORE
 else
 	CC = arm-none-eabi-gcc
 endif
@@ -68,16 +69,15 @@ OBJS := $(OBJS:%.S=$(OBJECT_DIR)/%.o)
 ###############
 all: buildelf
 
-
 buildelf: $(OBJS) 
-	$(CC) -o "$(BIN_DIR)/ARM_CORE.elf" $(OBJS) $(LINKER_FLAGS)
+	$(CC) -o "$(BIN_DIR)/$(PROJECT_NAME).elf" $(OBJS) $(LINKER_FLAGS)
 ifdef OBJCOPY
-	$(OBJCOPY) -O ihex "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.hex"
+	$(OBJCOPY) -O ihex "$(BIN_DIR)/$(PROJECT_NAME).elf" "$(BIN_DIR)/$(PROJECT_NAME).hex"
 endif
 
 
 clean:
-	$(RM) $(OBJS) "$(BIN_DIR)/ARM_CORE.elf" "$(BIN_DIR)/ARM_CORE.hex" "$(BIN_DIR)/ARM_CORE.map"
+	$(RM) $(OBJS) "$(BIN_DIR)/$(PROJECT_NAME).elf" "$(BIN_DIR)/$(PROJECT_NAME).hex" "$(BIN_DIR)/$(PROJECT_NAME).map"
 
 
 ##################
