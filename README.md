@@ -10,29 +10,31 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites ###
 
 The following tools are required in order to build and run this project:
-	Atollic TrueStudio for STM32
-	GIT (e.g. GitHub)
-	Shippable
+```
+Atollic TrueStudio for STM32
+GIT (e.g. GitHub)
+Shippable
+```
 
 ### Installing ###
 
 Get repository
-'''
+```
 Clone this repository to your local folder
-'''
+```
 
 Setup tools
-'''
+```
 Connect your project to GIT and Shippable
-'''
+```
 
 Run this project locally
 Option 1, Debug:
-'''
+```
 Use the Debug option to flash the project on the ARM
-'''
+```
 Option 2, Run:
-'''
+```
 Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html) from STMicroElectronics
 * Go to Run > External Tools > External Tools Configurations
 * Right-click on Program > New
@@ -45,18 +47,18 @@ Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html
 * Add... > choose external tool you've just created for ST-LINK_CLI.exe
 * Apply and Exit
 The project should now be configured to flash and run it
-'''
+```
 
 ## Building the project ###
 
 This repository cantains a Makefile which can compile and build the source code.
 To use this Makefile, the following commands should be used:
-'''
+```
 * make       - Displays help dialog
 * make clean - Removes all generated files
 * make build - Builds the source code
 * make all   - Executes 'make clean' and 'make build' respectively
-'''
+```
 
 ## Running the tests ##
 
