@@ -11,9 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 The following tools are required in order to build and run this project:
 ```
-Atollic TrueStudio for STM32
-GIT (e.g. GitHub)
-Shippable
+* Atollic TrueStudio for STM32
+* GIT (e.g. GitHub)
+* Shippable
 ```
 
 ### Installing ###
@@ -22,11 +22,10 @@ Before building and running the software, this repository should be setup with G
 
 In order to flash and run this project locally, the following options can be used:
 * Option 1, Debug:
-```
 Use the Debug button within Atollic to flash the project on the ARM
-```
 
-* Option 2, Run:
+
+* Option 2, Run:  
 Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html) from STMicroElectronics and perform the following:
 ```
 * Go to Run > External Tools > External Tools Configurations
@@ -40,7 +39,7 @@ Install [STSW-LINK004](https://www.st.com/en/development-tools/stsw-link004.html
 * Add... > choose external tool you've just created for ST-LINK_CLI.exe
 * Apply and Exit
 ```
-The project should now be configured to flash and run it
+The project should now be configured to flash and run it.
 
 ![picture alt](http://thundertronics.com/wp-content/uploads/2018/07/flashandrun.png "Flash and Run configurations")
 
@@ -61,8 +60,8 @@ No tests are implemented yet
 
 ## Authors ##
 
-**Henrico Brom** 
-Third-year student Electrical Engineering at the Utrecht University of Applied Sciences (02-05-2019)
+**Henrico Brom**  (05-02-2019)  
+Third-year student Electrical Engineering at the Utrecht University of Applied Sciences  
 (Henrico.brom@student.hu.nl)
 
 ## Acknowledgements ##
