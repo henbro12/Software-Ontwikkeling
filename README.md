@@ -1,21 +1,18 @@
 # Software Ontwikkeling #
-=========================
+-------------------------
 
 This project is a simple template that students can use for the assignment of the Software Development course.
 
 ## Getting Started ##
----------------------
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites ###
 
 The following tools are required in order to build and run this project:
-'''
-Atollic TrueStudio for STM32
-GIT (e.g. GitHub)
-Shippable
-'''
+	Atollic TrueStudio for STM32
+	GIT (e.g. GitHub)
+	Shippable
 
 ### Installing ###
 
@@ -51,7 +48,6 @@ The project should now be configured to flash and run it
 '''
 
 ## Building the project ###
----------------------------
 
 This repository cantains a Makefile which can compile and build the source code.
 To use this Makefile, the following commands should be used:
@@ -63,19 +59,16 @@ To use this Makefile, the following commands should be used:
 '''
 
 ## Running the tests ##
------------------------
 
 No tests are implemented yet
 
 ## Authors ##
--------------
 
 **Henrico Brom** 
 Third-year student Electrical Engineering at the Utrecht University of Applied Sciences (02-05-2019)
 (Henrico.brom@student.hu.nl)
 
 ## Acknowledgements ##
-----------------------
 * Franc van der Bent (Teacher at Hogeschool Utrecht)
 * Michiel Scager (Teacher at Hogeschool Utrecht)
 * Jeroen de Bruijn (Graduated student from Hogeschool Utrecht)
