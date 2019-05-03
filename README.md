@@ -7,8 +7,6 @@ This project is a simple template that students can use for the assignment of th
 | Branch  | Status                                                                                              |
 | ------- | --------------------------------------------------------------------------------------------------- |
 | Master  | [![Run Status](https://api.shippable.com/projects/5cc2cbdd9bbe6e00074197e5/badge?branch=master)]()  |
-| Develop |                                                                                                     |
-
 
 ## Getting Started ##
 
