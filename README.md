@@ -3,6 +3,13 @@
 
 This project is a simple template that students can use for the assignment of the Software Development course.
 
+## Build status
+| Branch  | Status                                                                                              |
+| ------- | --------------------------------------------------------------------------------------------------- |
+| Master  | [![Run Status](https://api.shippable.com/projects/5cc2cbdd9bbe6e00074197e5/badge?branch=master)]()  |
+| Develop |                                                                                                     |
+
+
 ## Getting Started ##
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
