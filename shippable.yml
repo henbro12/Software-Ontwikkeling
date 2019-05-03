@@ -21,6 +21,6 @@ build:
     - arm-none-eabi-objcopy --version
     - make all
 
-  on success:
+  on_success:
     # Do something on success (e.g. generate doxygen file and push it to Git)
     - echo "SUCCESS!!"
