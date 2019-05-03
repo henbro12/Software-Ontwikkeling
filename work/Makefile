@@ -30,7 +30,7 @@ ifndef SHIPPABLE
  	PROJECT_NAME = ARM_CORE
 else
 	CC = arm-none-eabi-gcc
-	OBJCOPY = arm-nono-eabi-objcopy
+	OBJCOPY = arm-none-eabi-objcopy
 endif
 
 RM=rm -rf
