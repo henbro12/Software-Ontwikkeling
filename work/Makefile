@@ -30,6 +30,7 @@ ifndef SHIPPABLE
  	PROJECT_NAME = ARM_CORE
 else
 	CC = arm-none-eabi-gcc
+	OBJCOPY = arm-nono-eabi-objcopy
 endif
 
 RM=rm -rf
@@ -71,9 +72,7 @@ all: buildelf
 
 buildelf: $(OBJS) 
 	$(CC) -o "$(BIN_DIR)/$(PROJECT_NAME).elf" $(OBJS) $(LINKER_FLAGS)
-ifdef OBJCOPY
 	$(OBJCOPY) -O ihex "$(BIN_DIR)/$(PROJECT_NAME).elf" "$(BIN_DIR)/$(PROJECT_NAME).hex"
-endif
 
 
 clean:
