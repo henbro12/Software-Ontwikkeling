@@ -26,6 +26,10 @@
 ifdef SHIPPABLE
 	CC = arm-none-eabi-gcc
 	OBJCOPY = arm-none-eabi-objcopy
+else ifndef WIN32
+	export PATH := C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ARMTools\bin:$(PATH)
+	CC = arm-atollic-eabi-gcc
+	OBJCOPY = arm-atollic-eabi-objcopy
 else 
 	SHELL=cmd
  	CC = arm-atollic-eabi-gcc
