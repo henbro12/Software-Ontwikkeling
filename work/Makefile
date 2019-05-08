@@ -23,14 +23,14 @@
 # 
 ################################################################################
 
-ifndef SHIPPABLE
+ifdef SHIPPABLE
+	CC = arm-none-eabi-gcc
+	OBJCOPY = arm-none-eabi-objcopy
+else 
 	SHELL=cmd
  	CC = arm-atollic-eabi-gcc
  	OBJCOPY = arm-atollic-eabi-objcopy
  	PROJECT_NAME = ARM_CORE
-else
-	CC = arm-none-eabi-gcc
-	OBJCOPY = arm-none-eabi-objcopy
 endif
 
 RM=rm -rf
